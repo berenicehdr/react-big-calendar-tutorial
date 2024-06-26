@@ -73,17 +73,11 @@ export default function DragAndDrop() {
   const dummyAppointment = {
     id: 3,
     status: "CI",
-    location: "Connecticut",
-    resource: "Alex Hales",
-    address: "1241 E Main St\n Stamford\n CT 06902\n United States",
+    location: "Materia",
+    resource: "Ingles Remedial I",
+    address: "Clave: H1001",
   };
-
-  const resources = [
-    { id: 1, title: "Dr Graff" },
-    { id: 2, title: "Dr Alex" },
-    { id: 3, title: "Dr Michelle" },
-  ];
-
+  
   return (
     <Flex p={2} gap={4} height="100%" width="100%" direction={"column"}>
       <Box>
@@ -97,7 +91,7 @@ export default function DragAndDrop() {
             <AppointmentEvent appointment={dummyAppointment} />
           </Box>
           <OutsideEvent
-            onDragStart={() => setDraggedEvent("undroppable")}
+            onDragStart={() => setDraggedEvent(dummyAppointment)}
             draggable
           >
             Draggable but not for calendar.
@@ -109,7 +103,6 @@ export default function DragAndDrop() {
         <DnDCalendar
           {...props}
           events={events}
-          resources={resources}
           draggableAccessor={(event) => !!event.isDraggable}
           resizableAccessor={"isResizable"}
           onEventDrop={onChangeEventTime}

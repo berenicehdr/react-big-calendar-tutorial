@@ -18,6 +18,6 @@ export const props = {
   localizer,
   defaultDate: "2022-10-10",
   defaultView: Views.DAY,
-  max: moment("2022-10-10T16:00:00").toDate(),
-  min: moment("2022-10-10T08:00:00").toDate(),
+  max: moment("2022-10-10T20:00:00").toDate(),
+  min: moment("2022-10-10T06:00:00").toDate(),
 };

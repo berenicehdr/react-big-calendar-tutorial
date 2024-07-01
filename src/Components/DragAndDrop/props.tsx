@@ -16,8 +16,7 @@ const components: any = {
 export const props = {
   components,
   localizer,
-  defaultDate: "2022-10-10",
-  defaultView: Views.DAY,
-  max: moment("2022-10-10T20:00:00").toDate(),
-  min: moment("2022-10-10T06:00:00").toDate(),
+  defaultView: Views.WEEK,
+  max: moment("2024-06-28T23:00:00").toDate(),
+  min: moment("2024-06-28T07:00:00").toDate(),
 };

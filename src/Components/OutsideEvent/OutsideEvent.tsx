@@ -1,5 +1,6 @@
 import { Box, BoxProps } from "@chakra-ui/react";
 
+  
 export default function OutsideEvent({ children, ...rest }: BoxProps) {
   return (
     <Box

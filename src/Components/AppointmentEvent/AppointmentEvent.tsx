@@ -14,10 +14,10 @@ export default function AppointmentEvent({
     <Box bg={background} p={1} height="100%" color="black">
       <Flex alignItems={"center"} justifyContent="space-between">
         <Flex>
-          <Text fontSize="xs">{location}</Text>
+          <Text fontSize="s">{location}</Text>
         </Flex>
         <Flex>
-          <Text fontSize="xs">{resource}</Text>
+          <Text fontSize="s">{resource}</Text>
         </Flex>
       </Flex>
       <Box mt={4}>
